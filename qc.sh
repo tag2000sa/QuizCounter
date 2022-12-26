@@ -5,8 +5,10 @@
 #Signature: md5sum: 
 #Subject: QuizCounter
 
+## List of Messages ##
 msg1="use the following options:\n\t-s <seconds>\n\t-m <minutes>\n\t-h <hours>"
 
+## Check1: Positional parameters must be 2, 4, 0r 6 only ##
 if [[ $# -lt 2 || $# -gt 6 || $#%2 -ne 0 ]]; then
 	echo -e "Error: "$msg1
 	exit
